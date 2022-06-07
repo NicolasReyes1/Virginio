@@ -8,12 +8,19 @@ namespace ConsoleApp1
 {
     class Program
     {
-        static void Main(string[] args)
+        static 
+            void Main(string[] args)
         {
+            try{
             Console.WriteLine("Numero 1; ");
             int num1 = int.Parse(Console.ReadLine());
             Console.WriteLine("Numero 2; ");
             int num2 = int.Parse(Console.ReadLine());
+
+
+            }catch (Exception ex){
+             Console.WriteLine("Error", Exception);   
+            }           
 
             Console.WriteLine("Menu");
             Console.WriteLine("1 sumar");
@@ -30,6 +37,10 @@ namespace ConsoleApp1
             Console.WriteLine("Opcion incorrecta");
             } 
             Console.ReadKey();
+            
+
         }
     }
 }
+
+
